@@ -1,0 +1,22 @@
+{
+  "name": "primo-explore-tns-styles",
+  "version": "1.0.0",
+  "description": "A CSS theme for The New School, also a javascript to hide OpacViaPrimo when all libraries have the item as an internet item.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnslibraries/primo-explore-tns-styles.git"
+  },
+  "keywords": [
+    "Theme"
+  ],
+  "author": "Allen Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tnslibraries/primo-explore-tns-styles/issues"
+  },
+  "homepage": "https://github.com/tnslibraries/primo-explore-tns-styles#readme"
+}

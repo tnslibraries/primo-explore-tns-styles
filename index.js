@@ -1,2 +1,2 @@
 require('./js/tnsStyles.module.js')
-module.exports = 'tnsStyles'
+module.exports = 'tns-styles'
