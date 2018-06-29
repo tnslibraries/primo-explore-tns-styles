@@ -1,0 +1,352 @@
+
+/* Remove "Article suggested by bX" in "Related reading" panel */
+
+prm-recomendation-item .weak-text {
+	display: none;
+}
+
+/* Remove thumbnail from "Related reading" panel */
+prm-recomendation-item .media-figure {
+	display: none;
+} 
+
+/* Hide "Edit" option in My Account > Personal Details */
+.prm-personal-info div md-card md-card-content.layout-align-space-around-center.layout-column button {
+	display: none;
+	visibility: hidden;
+}
+md-card#personalDetails md-card-header div.md-toolbar-tools button {
+	display: none;
+	visibility: hidden;
+}
+md-card#personalDetails md-card-header.transparent-toolbar.layout-fill {
+	height: 0;
+}
+
+#mainMenu .item-content {font-size:1.25em;}
+
+prm-search-result-availability-line > div.layout-row { display:none; }
+
+prm-service-button-after > button {color:#FF0000;}
+
+div#tags {display:none;}
+button[aria-label*='Tags'] {display:none;}
+
+/*Hide Internet Locations that patrons cant access  */
+
+prm-locations prm-location button[aria-label*='Internet'] {display:none;}
+/*prm-locations prm-location button[aria-label*='Shanghai'] {display:none;}
+prm-locations prm-location button[aria-label*='Abu Dhabi'] {display:none;} */
+
+prm-locations prm-location div[aria-label*='Internet Resources'] {display:none;}
+/*prm-locations prm-location div[aria-label*='Shanghai'] {display:none;}
+prm-locations prm-location div[aria-label*='Abu Dhabi'] {display:none;} */
+
+
+/* Hide Request Services for Now */
+/*prm-request-services {display:none;} */
+
+prm-view-online > div {
+	width:100%;
+	text-indent:1.125em;
+	padding-top: 5px;
+	padding-bottom:5px;
+	background-color: white;
+
+}
+
+prm-virtual-browse [md-virtual-repeat] {
+	min-height:180px;
+	max-height:180px;
+}
+
+prm-virtual-browse-item md-card {
+	min-height:200px;
+}
+nyu-eshelf-toolbar {display:none;}
+
+/* White  background*/
+prm-search-bar, prm-topbar .top-nav-bar, md-content, md-content.md-primoExplore-theme, .md-button.button-over-dark, prm-topbar .md-button:not(.md-icon-button),
+prm-topbar .md-button:not(.md-icon-button), prm-user-area .md-toolbar-tools, body, prm-atoz-search-bar, prm-browse-search-bar, prm-tags-search-bar, .classic-input .search-scope {
+  background-color: white; }
+
+/*Search bar with no shadow and with black underline */
+.__gt-xs prm-search-bar .search-elements-wrapper.simple-mode .simple-search-wrapper, .classic-input.simple-search-wrapper.layout-fill.layout-row, .classic-input.layout-fill.layout-row {
+  box-shadow: none;
+  border: 1px solid black; } 
+
+/*Remove side border from main mneu links*/
+.buttons-group .md-button:first-child {
+  box-shadow: none; }
+
+/* Black text color*/
+.layout-align-center-center > *, .md-button.button-over-dark, prm-user-area .user-menu-button .user-name, prm-user-area md-fab-toolbar .md-fab-action-item .md-button, .md-button.button-confirm, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+  color: black;
+  box-shadow: none; }
+
+  /* colors */
+/* breakpoints */
+.light-on-dark-dialog md-content.overlay-menu-content {
+  background-color: rgba(0, 0, 0, 0.6); }
+  .light-on-dark-dialog md-content.overlay-menu-content md-card:not([disabled]):hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .light-on-dark-dialog md-content.overlay-menu-content .settings-container prm-library-card-menu:hover,
+  .light-on-dark-dialog md-content.overlay-menu-content .settings-container .overlay-menu-item:hover,
+  .light-on-dark-dialog md-content.overlay-menu-content .settings-container prm-authentication:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+
+.light-on-dark-dialog md-select {
+  color: white; }
+
+.light-on-dark-dialog .overlay-menu-item md-icon {
+  color: white !important; }
+
+md-dialog.light-on-dark-dialog.login-dialog {
+  background-color: white;
+  border: none; }
+  md-dialog.light-on-dark-dialog.login-dialog md-input-container label:not(.md-no-float):not(._md-container-ignore) {
+    color: #8a8a8d; }
+  md-dialog.light-on-dark-dialog.login-dialog md-input-container .md-input {
+    border-bottom: 1px solid black;
+    color: black; }
+  md-dialog.light-on-dark-dialog.login-dialog md-input-container.md-input-focused .md-input {
+    color: black; }
+  md-dialog.light-on-dark-dialog.login-dialog .md-button:not([disabled]).button-confirm {
+    background-color: #008aab;
+    color: white;
+    border: 1px solid #008aab; }
+    md-dialog.light-on-dark-dialog.login-dialog .md-button:not([disabled]).button-confirm:hover, md-dialog.light-on-dark-dialog.login-dialog .md-button:not([disabled]).button-confirm:focus {
+      background-color: white;
+      color: #008aab; }
+  md-dialog.light-on-dark-dialog.login-dialog .md-button:not([disabled]).button-as-link {
+    color: #008aab;
+    border: 1px solid white; }
+    md-dialog.light-on-dark-dialog.login-dialog .md-button:not([disabled]).button-as-link:hover {
+      background-color: white;
+      border-color: #008aab; }
+  md-dialog.light-on-dark-dialog.login-dialog span[translate="login.cancel"] {
+    color: #008aab; }
+    md-dialog.light-on-dark-dialog.login-dialog span[translate="login.cancel"]:hover {
+      color: black; }
+  md-dialog.light-on-dark-dialog.login-dialog md-list md-list-item .md-list-item-text .list-item-title[translate*="parallel.login.link"] {
+    color: #008aab;
+    font-weight: bold; }
+    md-dialog.light-on-dark-dialog.login-dialog md-list md-list-item .md-list-item-text .list-item-title[translate*="parallel.login.link"]::after {
+      content: "\2192";
+      margin-left: 10px;
+      font-size: 30px; }
+
+md-dialog.light-on-dark-dialog .close-button.md-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+md-input-container.underlined-input input[name="textField"] {
+  border: 1px solid black; }
+
+.search-actions .md-primoExplore-theme.md-button,
+.simple-search-wrapper .md-primoExplore-theme.md-button {
+  background-color: #e2191a;
+  border-radius: 0; }
+  .search-actions .md-primoExplore-theme.md-button:hover,
+  .simple-search-wrapper .md-primoExplore-theme.md-button:hover {
+    background-color: black; }
+  .search-actions .md-primoExplore-theme.md-button svg,
+  .simple-search-wrapper .md-primoExplore-theme.md-button svg {
+    color: white; }
+
+@media (min-width: 1025px) {
+  prm-topbar {
+    height: 85px; } }
+
+prm-topbar ._md-select-icon:after {
+  color: black; }
+
+.simple-search-wrapper {
+  border: 1px solid black; }
+  .simple-search-wrapper.classic-input {
+    border-radius: 0;
+    overflow: visible; }
+    .simple-search-wrapper.classic-input .search-scope {
+      position: absolute;
+      top: -10px;
+      left: 6px; }
+
+prm-user-area .md-button.user-menu-button {
+  font-size: 1.2em; }
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-focused {
+  color: black; }
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button:not([disabled]):hover {
+  color: black; }
+
+md-card.default-card {
+  box-shadow: none; }
+
+prm-collection-gallery-header .collection-header-inner {
+  background-color: black; }
+
+.bar.alert-bar {
+  background-color: color: #8a8a8d; }
+
+prm-locations .bar.alert-bar {
+    background-color: white;
+    border: none;
+    color: #8a8a8d; }
+
+@media (max-width: 600px) {
+  .layout-column.flex-60, .layout-column.flex-50 {
+    max-width: 100%; } }
+
+/*search result colors */
+        .prm-background.prm-hue2, html.prm-hue2, body.prm-hue2, .line-clamp-1::after, .line-clamp-2::after, .line-clamp-3::after, .line-clamp-4::after, .line-clamp-5::after, .prm-horizontal-content .horizontal-content-item md-card > .md-button, prm-search-result-list .results-header, prm-search-result-list .results-footer, prm-search .prm-hue2.ui-blocker, prm-featured-result-item md-card md-card-title, prm-featured-results .horizontal-content-container .prm-hue2.horizontal-content-control, .list-item-wrapper, prm-search-bar .simple-search-wrapper .prm-hue2.search-options::after, prm-atoz-search-bar .simple-search-wrapper .prm-hue2.search-options::after, prm-browse-search-bar .simple-search-wrapper .prm-hue2.search-options::after, prm-tags-search-bar .simple-search-wrapper .prm-hue2.search-options::after, prm-search-bar .simple-search-wrapper .search-options md-divider.prm-hue2, prm-atoz-search-bar .simple-search-wrapper .search-options md-divider.prm-hue2, prm-browse-search-bar .simple-search-wrapper .search-options md-divider.prm-hue2, prm-tags-search-bar .simple-search-wrapper .search-options md-divider.prm-hue2, prm-search-bar .advanced-search-tabs, prm-atoz-search-bar .advanced-search-tabs, prm-browse-search-bar .advanced-search-tabs, prm-tags-search-bar .advanced-search-tabs, prm-search-bar .advanced-search-output md-card, prm-atoz-search-bar .advanced-search-output md-card, prm-browse-search-bar .advanced-search-output md-card, prm-tags-search-bar .advanced-search-output md-card, .prm-hue2.prm-view-overlay-inner, .prm-full-view-dialog, .full-view-inner-container, .__xs prm-facet.prm-hue2, .__sm prm-facet.prm-hue2, .__sm .prm-hue2.sidebar, .__xs .prm-hue2.sidebar, .multiselect-submit .prm-hue2.multiselect-submit-inner, .__xs prm-full-view-cont .recommendations-wrapper, .__sm prm-full-view-cont .recommendations-wrapper, prm-recomendation-item .media-on-hover .pin-button, prm-recomendation-item .media-on-hover .pin-button:hover, prm-full-view-cont prm-recomendation-item .media-on-hover .prm-hue2.pin-button, .recommendations-title::after, prm-full-view-cont .prm-hue2.recommendations-title::after, .__xs prm-full-view-cont .recommendations-title::after, .__sm prm-full-view-cont .recommendations-title::after, .recommendations-title prm-icon, prm-full-view-cont .recommendations-title prm-icon.prm-hue2, .__xs prm-full-view-cont .recommendations-title prm-icon, .__sm prm-full-view-cont .recommendations-title prm-icon, prm-gallery-collection .collection-folder, prm-gallery-collection .collection-folder .item-meta, prm-gallery-collection .collection-folder h3 span, prm-gallery-item .collection-element, prm-gallery-item .collection-element .resource-type, prm-gallery-item .collection-element .item-title, prm-browse-search md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner, prm-tags-results-list md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner, prm-resource-recommender md-card, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider.prm-hue2, md-dialog md-toolbar.prm-hue2:not(.md-menu-toolbar), md-grid-tile, .tiles-grid-tile, md-grid-tile md-list prm-spinner.overlay-cover::after, md-grid-tile .tile-content prm-spinner.overlay-cover::after, .tiles-grid-tile md-list prm-spinner.overlay-cover::after, .tiles-grid-tile .tile-content prm-spinner.overlay-cover::after, md-card.default-card, prm-featured-result-item md-card, md-card .prm-hue2.card-content-block, md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner {
+
+    background-color: #F3F3F3 !important;
+
+}
+
+.user-menu {
+font-size:1.2em;
+}
+
+.user-language {
+	display:none;
+}
+
+prm-change-lang {display:none;}
+
+.md-nav-bar {background-color: white;}
+
+/* Reordering full view sections in new UI*/
+.full-view-inner-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column; }
+
+/* border color*/
+.classic-input .search-scope {
+  border-color: white; }
+
+#brief {
+  -webkit-box-ordinal-group: 1;
+          order: 0; }
+
+#getit_link1_0 {
+  -webkit-box-ordinal-group: 3;
+          order: 2; }
+
+#action_list {
+  -webkit-box-ordinal-group: 2;
+          order: 1; }
+
+#getit_link2 {
+ -webkit-box-ordinal-group: 4;
+          order: 3;
+           }
+
+#getit_link1_1 {
+ -webkit-box-ordinal-group: 5;
+          order: 4; }
+
+#details {
+  -webkit-box-ordinal-group: 6;
+          order: 5; }
+
+#links {
+  -webkit-box-ordinal-group: 7;
+          order: 6;
+           }
+
+#tags {
+  -webkit-box-ordinal-group: 8;
+          order: 7; 
+          display:none;}
+
+#citationTrails {
+  -webkit-box-ordinal-group: 9;
+          order: 8; }
+
+#virtualBrowse {
+  -webkit-box-ordinal-group: 10;
+          order: 9; 
+          display:none;}
+
+.syndetic-unbound-section {
+  -webkit-box-ordinal-group: 11;
+          order: 10; }
+
+.full-view-inner-container {
+  padding-bottom: 10em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+
+
+[aria-label="View Online"] {
+  -webkit-box-ordinal-group: 3 !important;
+          order: 2 !important; }
+
+[aria-label="Send to"] {
+  -webkit-box-ordinal-group: 2 !important;
+          order: 1 !important; }
+
+[aria-label="Details"] {
+  -webkit-box-ordinal-group: 6 !important;
+          order: 5 !important; }
+
+[aria-label="Get It"] {
+  -webkit-box-ordinal-group: 5 !important;
+          order: 4 !important; }
+
+[aria-label="Request Services"] {
+  -webkit-box-ordinal-group: 4 !important;
+          order: 3 !important; 
+          }
+
+[aria-label="Links"] {
+  -webkit-box-ordinal-group: 7 !important;
+          order: 6 !important; 
+          }
+
+[aria-label="Citations"] {
+  -webkit-box-ordinal-group: 8 !important;
+          order: 7 !important; }
+
+[aria-label="Virtual Browse"] {
+  -webkit-box-ordinal-group: 9 !important;
+          order: 8 !important; 
+          display:none;}
+.accessible-explore{
+  -webkit-box-ordinal-group: 10 !important;
+          order: 9 !important; 
+          display:none;}
+
+prm-alphabet-toolbar .md-button {color:#000;}
+prm-alphabet-toolbar .md-button:not([disabled]):hover {background-color:#F1F1F1; color:#333;}
+prm-alphabet-toolbar .md-button.active, prm-alphabet-toolbar .md-button.active.md-focused, prm-alphabet-toolbar .md-button.active:focus, prm-alphabet-toolbar .md-button.active:hover {
+  background-color: #e2191a;
+  color:#F3F3F3;
+}
+
+/*getit-to-link-resolver-full {display:none;} */
+
+nyu-eshelf {display:none;}
+
+/*prm-locations > div:first-child > h3.section-title:first-child {visibility:hidden;}
+
+prm-location-items > h3.section-title:first-child {visibility:hidden;} */
+
+#getit_link1_0 prm-view-online > div > a > span {
+  font-size:1.1em;
+  font-weight:500;}
+
+#getit_link2 prm-view-online > div:first-child {display:none;}
+
+/*prm-request-services {display:none;} */
+getit-to-link-resolver-full {display:none;}
+
+#getit_link1_0 illiadTabs {display:none;}
